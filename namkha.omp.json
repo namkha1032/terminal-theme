@@ -8,7 +8,7 @@
           "foreground": "#ffffff",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "style": "diamond",
-          "template": "\ueb05 {{ if .WSL }}WSL at {{ end }}{{ .Name }} ",
+          "template": "\ueb05 namkha ",
           "trailing_diamond": "\ue0b4",
           "type": "shell"
         },
