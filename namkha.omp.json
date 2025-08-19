@@ -9,12 +9,12 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#8ac926",
+          "foreground": "#20a9a9",
           "template": "\u256d\u2500"
         },
         {
           "type": "python",
-          "style": "powerline",
+          "style": "plain",
           "foreground": "#7b7b7b",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}({{ .Venv }}) {{ end }}{{ end }}"
         },
@@ -38,10 +38,11 @@
         },
         {
           "type": "path",
-          "style": "powerline",
+          "style": "diamond",
           "background": "#ffca3a",
           "foreground": "#100302",
-          "powerline_symbol": "\ue0b4",
+          "leading_diamond": "<transparent,background>\ue0b4</>",
+          "trailing_diamond": "\ue0b4",
           "properties": {
             "style": "agnoster_full"
           },
@@ -94,7 +95,7 @@
       "segments": [
         {
           "type": "text",
-          "foreground": "#8ac926",
+          "foreground": "#20a9a9",
           "style": "plain",
           "template": "\u2570\u2500"
         },
