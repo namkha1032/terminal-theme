@@ -50,7 +50,7 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#100e23",
+          "foreground": "#00f5d4",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ff9248{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}",
