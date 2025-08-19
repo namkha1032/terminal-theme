@@ -15,7 +15,7 @@
         {
           "type": "python",
           "style": "powerline",
-          "foreground": "#757575",
+          "foreground": "#7b7b7b",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}({{ .Venv }}) {{ end }}{{ end }}"
         },
         {
