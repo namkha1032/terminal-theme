@@ -25,7 +25,7 @@
           "trailing_diamond": "\ue0b4",
           "background": "#1982c4",
           "foreground": "#100302",
-          "template": "{{ if gt .Code 0 }}🥵{{ else }}😎{{ end }} {{ .UserName }}@{{ .HostName }}"
+          "template": " 🌊 {{ .UserName }}@{{ .HostName }}"
         },
         {
           "type": "path",
