@@ -16,7 +16,7 @@
           "type": "python",
           "style": "plain",
           "foreground": "#7b7b7b",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}({{ .Venv }}) {{ end }}{{ end }}"
+          "template": " 🐍 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}({{ .Venv }}) {{ end }}{{ end }}"
         },
         {
           "type": "session",
@@ -25,7 +25,7 @@
           "trailing_diamond": "\ue0b4",
           "background": "#8ac926",
           "foreground": "#100302",
-          "template": " {{ .UserName }} "
+          "template": "{{ if gt .Code 0 }}🥵{{ else }}😎{{ end }} {{ .UserName }}"
         },
         {
           "type": "session",
@@ -34,7 +34,7 @@
           "trailing_diamond": "\ue0b4",
           "background": "#1982c4",
           "foreground": "#100302",
-          "template": " @{{ .HostName }} "
+          "template": " 🏠 {{ .HostName }} "
         },
         {
           "type": "path",
@@ -46,7 +46,7 @@
           "properties": {
             "style": "agnoster_full"
           },
-          "template": " {{ .Path }} "
+          "template": " 📁 {{ .Path }} "
         },
         {
           "type": "git",
@@ -84,7 +84,7 @@
           "trailing_diamond": "\ue0b4",
           "background": "#ff595e",
           "foreground": "#100302",
-          "template": " {{ if gt .Code 0 }}error{{ else }}\uf42e{{ end }} "
+          "template": "{{ if gt .Code 0 }}💣 error{{ else }}\uf42e{{ end }} "
         }
       ]
     },
