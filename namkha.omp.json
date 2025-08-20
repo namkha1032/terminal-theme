@@ -23,18 +23,9 @@
           "style": "diamond",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4",
-          "background": "#8ac926",
-          "foreground": "#100302",
-          "template": "{{ if gt .Code 0 }}🥵{{ else }}😎{{ end }} {{ .UserName }}"
-        },
-        {
-          "type": "session",
-          "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b4</>",
-          "trailing_diamond": "\ue0b4",
           "background": "#1982c4",
           "foreground": "#100302",
-          "template": " 🏠 {{ .HostName }} "
+          "template": "{{ if gt .Code 0 }}🥵{{ else }}😎{{ end }} {{ .UserName }}@{{ .HostName }}"
         },
         {
           "type": "path",
@@ -47,6 +38,25 @@
             "style": "agnoster_full"
           },
           "template": " 📁 {{ .Path }} "
+        },
+        {
+          "type": "status",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b4</>",
+          "trailing_diamond": "\ue0b4",
+          "background_templates": [
+            "{{ if eq .Code 0 }}#8ac926{{ else }}#ff595e{{ end }}"
+          ],
+          "foreground": "#100302",
+          "template": "{{ if eq .Code 0 }} 🐢 clean{{ else }} 💣 error{{ end }} ",
+          "properties": {
+            "always_enabled": true,
+            "display_exit_code": false,
+            "mapping": {
+              "0": " clean "
+            },
+            "default_symbol": " error "
+          }
         },
         {
           "type": "git",
@@ -76,15 +86,6 @@
               "/Users/user/Projects/oh-my-posh/": "no"
             }
           }
-        },
-        {
-          "type": "status",
-          "style": "diamond",
-          "leading_diamond": " \ue0b6",
-          "trailing_diamond": "\ue0b4",
-          "background": "#ff595e",
-          "foreground": "#100302",
-          "template": "{{ if gt .Code 0 }}💣 error{{ else }}\uf42e{{ end }} "
         }
       ]
     },
