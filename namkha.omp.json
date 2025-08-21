@@ -25,7 +25,7 @@
           "trailing_diamond": "\ue0b4",
           "background": "#1982c4",
           "foreground": "#100302",
-          "template": " 🌊 {{ .UserName }}@{{ .HostName }}"
+          "template": " 🛵 {{ .UserName }}@{{ .HostName }}"
         },
         {
           "type": "path",
@@ -48,7 +48,7 @@
             "{{ if eq .Code 0 }}#8ac926{{ else }}#ff595e{{ end }}"
           ],
           "foreground": "#100302",
-          "template": "{{ if eq .Code 0 }} 🍀 nice{{ else }} 🔥 fail{{ end }} ",
+          "template": "{{ if eq .Code 0 }} 🍀 good{{ else }} 🔥 fail{{ end }} ",
           "properties": {
             "always_enabled": true,
             "display_exit_code": false,
