@@ -48,7 +48,7 @@
             "{{ if eq .Code 0 }}#8ac926{{ else }}#ff595e{{ end }}"
           ],
           "foreground": "#100302",
-          "template": "{{ if eq .Code 0 }} 🌹 ヾ(≧ ▽ ≦ *)o{{ else }} 🥀 (っ° Д °;)っ{{ end }} ",
+          "template": "{{ if eq .Code 0 }} 🍓 ヾ(≧ ▽ ≦ *)o{{ else }} 🦠 (っ° Д °;)っ{{ end }} ",
           "properties": {
             "always_enabled": true,
             "display_exit_code": false,
