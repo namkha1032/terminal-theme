@@ -102,7 +102,7 @@
         },
         {
           "type": "text",
-          "foreground": "#F1F3F4",
+          "foreground": "#FFFFFF",
           "style": "plain",
           "template": ">"
         }
