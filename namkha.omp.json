@@ -9,13 +9,13 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#20a9a9",
+          "foreground": "#3B96A4",
           "template": "\u256d\u2500"
         },
         {
           "type": "python",
           "style": "plain",
-          "foreground": "#7b7b7b",
+          "foreground": "#9AA0A6",
           "template": " 🐍 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}({{ .Venv }}) {{ end }}{{ end }}"
         },
         {
@@ -61,12 +61,12 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#20a9a9",
+          "foreground": "#34A853",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#FBBC05{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#EA4335{{ end }}",
             "{{ if gt .Ahead 0 }}#4285F4{{ end }}",
-            "{{ if gt .Behind 0 }}#34A853{{ end }}"
+            "{{ if gt .Behind 0 }}#E37400{{ end }}"
           ],
           "template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} \u2502{{ end }}{{ if .Staging.Changed }} {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} {{ .StashCount }}{{ end }} ",
           "properties": {
@@ -96,13 +96,13 @@
       "segments": [
         {
           "type": "text",
-          "foreground": "#20a9a9",
+          "foreground": "#3B96A4",
           "style": "plain",
           "template": "\u2570\u2500"
         },
         {
           "type": "text",
-          "foreground": "#ffffff",
+          "foreground": "#F1F3F4",
           "style": "plain",
           "template": ">"
         }
